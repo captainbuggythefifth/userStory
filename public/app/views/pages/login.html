@@ -1,0 +1,24 @@
+<div class="container" ng-controller="MainController as login">
+    <div class="col-md-12">
+        <div class="col-sm-6 col-sm-offset-6">
+            <form class="form-horizontal" method="post" ng-submit="login.doLogin()">
+                <div class="form-group is-empty">
+                    <label for="input-username" class="control-label pull-left">Username</label>
+                    <div class="col-md-10">
+                        <input type="text" id="input-username" class="form-control" name="username" ng-model="login.loginData.username">
+                    </div>
+                </div>
+
+                <div class="form-group is-empty">
+                    <label for="input-password" class="control-label pull-left">Password</label>
+                    <div class="col-md-10">
+                        <input type="text" id="input-password" class="form-control" name="password" ng-model="login.loginData.password">
+                    </div>
+                </div>
+
+                <button class="btn btn-info btn-raised pull-right" type="submit">Log In</button>
+            </form>
+        </div>
+    </div>
+
+</div>

@@ -1,0 +1,31 @@
+<div class="container" ng-controller="UserCreateController as user">
+    <div class="col-md-12">
+        <div class="col-sm-6 col-sm-offset-6">
+            <form class="form-horizontal" method="post" ng-submit="user.signupUser()">
+                <div class="form-group is-empty">
+                    <label for="input-name" class="control-label pull-left">Name</label>
+                    <div class="col-md-10">
+                        <input type="text" id="input-name" class="form-control" name="name" ng-model="user.userData.name">
+                    </div>
+                </div>
+
+                <div class="form-group is-empty">
+                    <label for="input-username" class="control-label pull-left">Username</label>
+                    <div class="col-md-10">
+                        <input type="text" id="input-username" class="form-control" name="username" ng-model="user.userData.username">
+                    </div>
+                </div>
+
+                <div class="form-group is-empty">
+                    <label for="input-password" class="control-label pull-left">Password</label>
+                    <div class="col-md-10">
+                        <input type="text" id="input-password" class="form-control" name="password" ng-model="user.userData.password">
+                    </div>
+                </div>
+
+                <button class="btn btn-info btn-raised pull-right" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+</div>
