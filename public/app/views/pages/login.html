@@ -17,8 +17,16 @@
                 </div>
 
                 <button class="btn btn-info btn-raised pull-right" type="submit">Log In</button>
+
             </form>
         </div>
-    </div>
-
+        <div class="col-md-4 col-sm-offset-6 alert alert-dismissible alert-danger" ng-if="login.error">
+            <button type="button" class="close" data-dismiss="alert">×</button>
+            <strong>Oh snap!</strong>
+            <!--<a href="javascript:void(0)" class="alert-link">Change a few things up</a> and try submitting again.-->
+            {{ login.error }}
+        </div>
+    </>
 </div>
+
+
